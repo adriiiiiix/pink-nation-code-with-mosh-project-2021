@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PINK NATION</title>
+	<style type="text/css">
+		body{
+			font-family:'Comic Sans MS';
+			text-align: justify;
+		}
+		.row{
+			padding: 40px;
+			background-color: lightpink;
+		}
+		.col{
+			padding: 30px;
+			display: inline;
+		}
+		.col:hover{
+			background-color: pink;
+		}
+		a{
+			text-decoration: none;
+			color: white;
+			text-shadow: 2px 2px hotpink;
+		}
+		.box{
+			background: url("images/2.jpg");
+			background-position: cover;
+			padding: 200px;
+		}
+		h1{
+			text-align: center;
+			color: hotpink;
+			text-shadow: 2px 2px black;
+			font-style: italic;
+		}
+		.box1{
+			padding: 30px;
+		}
+		h2{
+			text-align: center;
+			color: hotpink;
+			text-shadow: 2px 2px black;
+			background-color: lightpink;
+		}
+		.box2{
+			padding: 30px;
+		}
+		.gallery{
+			display: grid;
+			grid-gap: 10px;
+		}
+		.gallery img{
+			object-fit: cover;
+			width: 100%;
+			border-radius: 5px;
+		}
+		.gallery img:nth-of-type(3) {
+    			grid-column: 2/4;
+    			grid-row: 1/3;
+  			}
+  		@media (max-width: 1024px){
+  			.gallery img:nth-of-type(3) {
+    			grid-column: 2/4;
+    			grid-row: 1/3;
+  			}
+  		}
+  		.box3{
+			padding: 30px;
+		}
+		.footer{
+			padding: 40px;
+			background-color: lightpink;
+		}
+		form{
+			text-align: center;
+		}
+		input[type=text], textarea, button{
+			width: 250px;
+			padding: 2.5px;
+			border: 2.5px solid #ccc;
+			border-radius: 10px;
+			resize: vertical;
+			background-color: white;
+		}
+		label{
+			font-weight: bold;
+			font-style: italic;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<div class="row">
+			<center>
+				<a id="home"><img src="images/logo.png"></a>
+			</center>
+			<br><br>
+			<div class="col">
+				<a href="PINKNATION.html">HOME</a>
+			</div>
+			<div class="col">
+				<a href="#about">ABOUT</a>
+			</div>
+			<div class="col">
+				<a href="#gallery">GALLERY</a>
+			</div>
+			<div class="col">
+				<a href="#contact">CONTACT</a>
+			</div>
+		</div>
+	</div>
+	<div class="box">
+		<div class="headerbox">
+			<h1>PINK NATION</h1>
+		</div>
+	</div>
+	<div class="box1">
+			<h2 id="about">ABOUT PINK NATION</h2>
+			<br>
+	<blockquote>
+		<p><strong>Pink</strong>, a delicate color that means sweet, nice, playful, cute, romantic, charming, feminine, and tenderness, is associated with bubble gum, flowers, babies, little girls, cotton candy, and sweetness.</p>
+		<p><strong>The color pink</strong> is the color of universal love of oneself and of others. Pink represents friendship, affection, harmony, inner peace, and approachability.</p>
+		<p><strong>Pink</strong> is the official color for little girls and represents sugar and spice and everything nice. Pink is the sweet side of the color red. While the color red stirs up passion, aggression, and action, large amounts of the color pink can actually create physical weakness.</p>
+		<p>Both red and <strong>pink</strong> represent love. The color red represents heat and passion, while the color pink represents romance and charm. Hot pink is used to communicate playfulness, while light pink is used to communicate tenderness.</p>
+		<p><strong>Pink gemstones</strong> are believed to bring about serenity, relaxation, acceptance, and contentment, as well to neutralize disorder or soften frustration.</p>
+		<p><strong>Other meanings associated with the color pink:</strong></p>
+		<ul>
+			<li>The phrase “in the pink” means healthy.</li>
+			<li>The expression “tickled pink” means being happy, content.</li>
+			<li>The saying “pink collar” refers to a female office worker, often used in a derogatory fashion.</li>
+			<li>The word “pink” means to cut, notch, or make a zigzag.</li>
+		</ul>
+	</blockquote>
+	</div>
+	<div class="box2">
+		<h2 id="gallery">GALLERY</h2>
+		<br>
+		<div class="gallery">
+			<img src="images/1.jpg">
+			<img src="images/3.jpg">
+			<img src="images/4.jpg">
+			<img src="images/5.jpg">
+			<img src="images/6.jpg">
+			<img src="images/7.jpg">
+			<img src="images/8.jpg">
+			<img src="images/9.jpg">
+		</div>
+	</div>
+	<div class="box3">
+		<h2 id="contact">CONTACT</h2>
+		<br>
+        <form action="#" method="post">
+            <label>First Name*</label><br><input type="text" name="firstname" required><br><br>
+            <label>Last Name*</label><br><input type="text" name="lastname" required><br><br>
+            <label>Email*</label><br><input type="text" name="email" required><br><br>
+            <label>Subject:</label><br><input type="text" name="subject" required><br><br>
+            <label>Write a message:</label><br><textarea type="text" name="comment" size="100" rows="5" cols="50" required></textarea>
+   			<br><br>
+            <button type="submit" value="Submit">Submit</button>
+            <br><br>
+            <b><i>* required fields</i></b>
+        </form>
+	</div>
+	<div class="footer">
+		<p style="text-align: center;"><a href="#home">JUMP</a></p>
+	</div>
+</body>
+</html>
